@@ -1,0 +1,67 @@
+<html>
+<head>
+   <h1> Course Details</h1>
+</head>
+    <style>
+    table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+    }
+      th, td {
+           padding: 15px;
+      }
+ </style>
+<body>
+    <form id="demo">
+  Name:
+  <input id="name" type="text" name="name" value=""><br>
+        <br>
+        Courses:
+        <select id="courses" name="topics" value="">
+        <option value="UI"> UI</option>
+        <option value="JAVA"> JAVA</option>
+        <option value="DOTNET"> DOTNET</option>
+        <option value="SQL"> SQL</option>
+        </select>
+        <br>
+        <br>
+    Sub Topics:
+        <select id="subtopics" name="Sub Topics" value="">
+    <option value="HTML"> HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="JAVA SCRIPT">JAVA SCRIPT</option>
+    <option value="JQUERY">JQUERY</option>
+  </select>
+        <br>
+        <br>  
+Duration:
+  <input id="duration" type="text" name="duration" value=""><br>
+        <br>
+        fee: <input id="fee" type="number" name="Fee" value=""><br>
+        <br>
+        Level:
+ <select id="level" name="Level">
+    <option value="Basic">Basic</option>
+    <option value="Intermediate">Intermediate</option>
+    <option value="Advenced">Advanced</option>
+  </select>
+        <br>
+        <br>
+
+        <input type="reset" name="clear" value="clear">
+        <input type="button" name="save" value="save" onclick="save1()" />
+</form>
+    <table id="table" style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>Courses</th>
+            <th>SubTopics</th>
+            <th> Duration</th>
+            <th> Fee</th>
+            <th>Level</th>
+            </tr>
+     </table>
+    <button id="addcourses1" type="button" onclick="openform()">add courses</button>
+    <script src="addcourses.js"></script>
+</body>
+</html>
